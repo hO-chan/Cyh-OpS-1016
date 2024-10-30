@@ -1,11 +1,17 @@
 {
-  "name": "cyh-ops-1016",
-  "version": "0.0.1",
-  "description": "옾소 1016",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "cyh-ops-1016",
+    "version": "0.0.1",
+    "description": "옾소 1016",
+    "main": "main.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "bin": {
+        "numnest": "./main.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
 }
