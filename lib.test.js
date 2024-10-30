@@ -12,3 +12,24 @@ test("avg([3, 5, 7]) should be 5", () => {
 test("avg([-5, 5]) should be 0", () => {
     expect(lib.avg([-5, 5])).toBe(0);
 });
+
+
+//셀프로 테스트 만들기
+//test , expect, toBe 를 사용해서 factorial , prime 을 테스트하기
+
+test("factorial([15]) must be 1,307,674,368,000", () => {
+    expect(lib.factorial([15])).toBe(1307674368000);
+})
+
+test("factorial([6]) must be 720", () => {
+    expect(lib.factorial([6])).toBe(720);
+})
+
+
+test("prime([17]) must be true", () => {
+    expect(lib.prime([17])).toBe(true);
+})
+
+test("prime([16]) must be false", () => {
+    expect(lib.prime([16])).toBe(false);
+})
